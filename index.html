@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <hr style="border:0;border-top:6px solid #01A9DB;">
+    <form method="post" enctype="multipart/form-data">
+      <br>
+      <label for="file">ＣＳＶ　：</label><input type="file" name="file" />
+      <br><br>
+      <label for="submit">処理方法：</label><input type="button" value="現在のデータを置換する" 
+      onclick="google.script.run.withSuccessHandler(function() {google.script.host.close();}).uploadA(this.parentNode)"/>
+      　
+      <br>
+　　　　　　　　　　　　　　　　　　　　それぞれのボタンの
+      <br>
+      <label for="submit">　　　　　</label><input type="button" value="現在のデータに追加・修正する" 
+      onclick="google.script.run.withSuccessHandler(function() {google.script.host.close();}).uploadB(this.parentNode)"/>
+      　　クリックは１回だけ
+      <br><br>
+      　―　処理が完全に終わったとき、この画面は閉じられます　―
+      <br>
+    </form>
+    <hr style="border:0;border-top:6px solid #01A9DB;">
+    <small>取引集計（イキナリＡＵＴＯ版）　&copy;2018 jinjin</small>
+  </body>
+</html>
+
+
+
+
